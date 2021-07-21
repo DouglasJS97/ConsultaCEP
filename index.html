@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ConsultaCEP | Consultar Logradouro</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Consulta CEP:</h1>
+        <form action="">
+            <div class="input-pesquisar">
+                <input type="text" placeholder="pesquisar" id="cep" onblur="pesquisacep(this.value);" name="cep">
+            </div>
+            <div class="input-enviar">
+                <input type="button" value="Consultar">
+            </div>
+        </form>
+    </section>
+
+    <section class="conteudo">
+        <form action="get">
+            <div class="campo-leitura">
+                <span>CEP:</span>
+                <input type="text" readonly id="cepleitura">
+            </div>
+
+            <div class="campo-leitura">
+                <span>Rua:</span>
+                <input type="text" readonly id="rua" name="rua">
+            </div>
+
+            <div class="campo-leitura">
+                <span>Bairro:</span>
+                <input type="text" readonly id="bairro" name="bairro">
+            </div>
+
+            <div class="campo-leitura">
+                <span>Cidade:</span>
+                <input type="text" readonly id="cidade" name="cidade">
+            </div>
+
+            <div class="campo-leitura">
+                <span>Estado:</span>
+                <input type="text" readonly id="uf" name="uf">
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <h3>Todos os direitos reservados.</h3>
+        <p><a href="https://www.linkedin.com/in/douglasmiranda1997/"><i class="fab fa-linkedin-in"></i>Douglas Antonio Miranda</a></p>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+</html>
